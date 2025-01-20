@@ -16,7 +16,7 @@ function App()
     window.scrollTo(0, 0);
   };
   const toggleVisibility = () => {
-    if (window.pageYOffset > 500) {
+    if (window.scrollY > 500) {
       setIsVisible(true);
     } else {
       setIsVisible(false);

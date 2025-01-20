@@ -5,8 +5,8 @@ import "../css/Navbar.css";
 export const Navbar = () => {
   return (
     <>
-      <div className="w-screen bg-black text-white navBar">
-        <div className="navbar_outer">
+      <div className="w-screen text-white navBar bg-black bg-opacity-30 backdrop-blur-md">
+        <div className="navbar_outer flex items-center">
           <div className="navbar_left">
             <Link to="home"
               spy={true}
@@ -15,7 +15,7 @@ export const Navbar = () => {
               duration={500}
               style={{cursor: "pointer"}}><img className="imgLogo" src={Logo} alt="logo..."></img></Link>
           </div>
-          <div className="navbar_right font view_mobile">
+          <div className="navbar_right font view_mobile flex items-center gap-1 pr-5">
             <Link
               to="home"
               spy={true}
@@ -23,7 +23,7 @@ export const Navbar = () => {
               offset={-100}
               duration={500}
             >
-              <div className="navbar_right_content cursor-pointer text-xl">Home</div>
+              <div className="navbar_right_content cursor-pointer hover:bg-white hover:text-black p-2 rounded-full text-xl">Home</div>
             </Link>
             <Link
               to="about"
@@ -32,7 +32,7 @@ export const Navbar = () => {
               offset={-100}
               duration={500}
             >
-              <div className="navbar_right_content cursor-pointer">About</div>
+              <div className="navbar_right_content cursor-pointer hover:bg-white hover:text-black p-2 rounded-full">About</div>
             </Link>
             <Link
               to="events"
@@ -41,7 +41,7 @@ export const Navbar = () => {
               offset={-100}
               duration={500}
             >
-              <div className="navbar_right_content cursor-pointer">Events</div>
+              <div className="navbar_right_content cursor-pointer hover:bg-white hover:text-black p-2 rounded-full">Events</div>
             </Link>
             <Link
               to="team"
@@ -50,7 +50,7 @@ export const Navbar = () => {
               offset={-100}
               duration={500}
             >
-              <div className="navbar_right_content cursor-pointer">Team</div>
+              <div className="navbar_right_content cursor-pointer hover:bg-white hover:text-black p-2 rounded-full">Team</div>
             </Link>
             <Link
               to="contact us"
@@ -59,7 +59,7 @@ export const Navbar = () => {
               offset={-150}
               duration={500}
             >
-              <div className="navbar_right_content cursor-pointer">
+              <div className="navbar_right_content cursor-pointer hover:bg-white hover:text-black p-2 rounded-full">
                 Contact Us
               </div>
             </Link>
@@ -71,7 +71,7 @@ export const Navbar = () => {
                 <span></span>
               </label>
 
-              <ul className="menu__box">
+              <ul className="menu__box h-fit">
                 <li>
                   <Link
                     className="menu__item"

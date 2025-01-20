@@ -32,10 +32,7 @@
 
 .navbar_right_content{
     font-size: 1.25rem;
-    line-height: 2.5rem;
-    margin: 0.75rem;
     width: fit;
-    margin-right: 1.5rem;
 }
 
 .view{
@@ -182,8 +179,8 @@
         position: fixed;
         top: 0;
         left: -100%;
-        width: 200px;
-        height: 100%;
+        width: 300px;
+        height: 100vh;
         margin: 0;
         padding: 80px 0;
         list-style: none;
